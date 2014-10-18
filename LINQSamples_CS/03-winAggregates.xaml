@@ -1,0 +1,33 @@
+﻿<Window x:Class="LINQSamples_CS.winAggregates"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        FontSize="18"
+        Title="Aggregate Methods">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <WrapPanel Grid.Row="0">
+      <Button Name="btnMin"
+                 Style="{StaticResource PDSALargeButton}" Click="btnMin_Click"
+                 >Min</Button>
+      <Button Name="btnMax"
+                 Style="{StaticResource PDSALargeButton}"
+                 Click="btnMax_Click">Max</Button>
+      <Button Name="btnSum"
+                 Style="{StaticResource PDSALargeButton}" Click="btnSum_Click"
+                 >Sum</Button>
+      <Button Name="btnAvg"
+                 Style="{StaticResource PDSALargeButton}" Click="btnAvg_Click"
+                 >Average</Button>
+    </WrapPanel>
+    <TextBox Grid.Row="1"
+               Name="txtXML"
+               Margin="10"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               VerticalScrollBarVisibility="Auto" />
+  </Grid>
+</Window>

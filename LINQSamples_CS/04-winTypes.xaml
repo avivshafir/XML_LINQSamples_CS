@@ -1,0 +1,33 @@
+﻿<Window x:Class="LINQSamples_CS.winTypes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        FontSize="18"
+        Title="Working with Classes">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <WrapPanel Grid.Row="0">
+      <Button Name="btnAnonymous"
+              Content="Anonymous Type"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnAnonymous_Click" />
+      <Button Name="btnLoadAClass"
+              Content="Load A Class"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLoadAClass_Click" />
+      <Button Name="btnTypePass"
+              Content="Return Collection"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnTypePass_Click" />
+    </WrapPanel>
+    <TextBox Grid.Row="1"
+             Name="txtXML"
+             Margin="10"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             VerticalScrollBarVisibility="Auto" />
+  </Grid>
+</Window>

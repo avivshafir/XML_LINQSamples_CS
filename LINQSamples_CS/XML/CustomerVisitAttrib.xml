@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomerVisit>
+  <Visit Name="Bruce Jones"
+         Date="3/24/2009" />
+  <Visit Name="Ken Getz"
+         Date="4/2/2009" />
+  <Visit Name="Michael Krasowski"
+         Date="5/1/2009" />
+  <Visit Name="John Kunh"
+         Date="6/10/2009" />
+</CustomerVisit>

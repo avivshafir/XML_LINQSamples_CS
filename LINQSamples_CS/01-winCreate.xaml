@@ -1,0 +1,33 @@
+﻿<Window x:Class="LINQSamples_CS.winCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         WindowStartupLocation="CenterScreen"
+        FontSize="18"
+        Title="Create XML Samples">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <WrapPanel Grid.Row="0">
+      <Button Name="btnBuildXML1"
+                 Style="{StaticResource PDSALargeButton}"
+                 Click="btnBuildXML1_Click">Build Empty XML Doc</Button>
+      <Button Name="btnBuildXML2"
+                 Style="{StaticResource PDSALargeButton}"
+                 Click="btnBuildXML2_Click">Build Populated XML</Button>
+      <Button Name="btnLoadXDocument"
+                 Style="{StaticResource PDSALargeButton}"
+                 Click="btnLoadXDocument_Click">Load using XDocument</Button>
+      <Button Name="btnLoadXElement"
+                 Style="{StaticResource PDSALargeButton}" Click="btnLoadXElement_Click"
+                 >Load using XElement</Button>
+    </WrapPanel>
+    <TextBox Grid.Row="1"
+               Name="txtXML"
+               Margin="10"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               VerticalScrollBarVisibility="Auto" />
+  </Grid>
+</Window>

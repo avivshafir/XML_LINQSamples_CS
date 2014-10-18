@@ -1,0 +1,57 @@
+﻿<Window x:Class="LINQSamples_CS.winQueries"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        FontSize="18"
+        Title="Query Samples">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <WrapPanel Grid.Row="0">
+      <Button Name="btnLinqSingleXDocument"
+              Content="Single Node using XDocument"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLinqSingleXDocument_Click" />
+      <Button Name="btnLinqSingleElement"
+              Content="Single Node using XElement"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLinqSingleElement_Click" />
+      <Button Name="btnLinqMultiple"
+              Content="Get All Nodes"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLinqQueryMultiple_Click" />
+      <Button Name="btnLinqWhere"
+              Content="Where Clause"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLinqWhere_Click" />
+      <Button Name="btnLinqAttribute"
+              Content="Where Clause / Attribute"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnLinqAttribute_Click" />
+      <Button Name="btnOrderBy"
+              Content="Order By"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnOrderBy_Click" />
+      <Button Name="btnRSSFeed"
+              Content="RSS Feed"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnRSSFeed_Click" />
+      <Button Name="btnJoin"
+              Content="Join"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnJoin_Click" />
+      <Button Name="btnFileSystem"
+              Content="Read File System"
+              Style="{StaticResource PDSALargeButton}"
+              Click="btnFileSystem_Click" />
+    </WrapPanel>
+    <TextBox Grid.Row="1"
+             Name="txtXML"
+             Margin="10"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             VerticalScrollBarVisibility="Auto" />
+  </Grid>
+</Window>

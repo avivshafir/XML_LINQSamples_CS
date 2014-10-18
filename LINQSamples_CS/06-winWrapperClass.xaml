@@ -1,0 +1,71 @@
+﻿<Window x:Class="LINQSamples_CS.winWrapperClass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wrapper Class for Menu Items"
+        FontSize="16"
+        Loaded="winMenuItemsTest_Load"
+        WindowStartupLocation="CenterScreen">
+   <Grid>
+      <Grid.RowDefinitions>
+         <RowDefinition Height="*" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="Auto" />
+         <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <ListBox Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Margin="4"
+               Name="lstMenus"
+               SelectionChanged="lstMenus_SelectionChanged" />
+      <TextBlock Grid.Row="1">Menu ID</TextBlock>
+      <TextBox Grid.Row="1"
+               Grid.Column="1"
+               Name="txtMenuID" />
+      <TextBlock Grid.Row="2">Parent Menu ID</TextBlock>
+      <TextBox Grid.Row="2"
+               Grid.Column="1"
+               Name="txtParentMenuID" />
+      <TextBlock Grid.Row="3">Display Order</TextBlock>
+      <TextBox Grid.Row="3"
+               Grid.Column="1"
+               Name="txtDisplayOrder" />
+      <TextBlock Grid.Row="4">Menu Text</TextBlock>
+      <TextBox Grid.Row="4"
+               Grid.Column="1"
+               Name="txtMenuText" />
+      <TextBlock Grid.Row="5">Action</TextBlock>
+      <TextBox Grid.Row="5"
+               Grid.Column="1"
+               Name="txtAction" />
+      <TextBlock Grid.Row="6">Enabled</TextBlock>
+      <CheckBox Grid.Row="6"
+                Grid.Column="1"
+                Name="chkEnabled"></CheckBox>
+      <StackPanel Grid.Row="7"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Orientation="Horizontal">
+         <Button Name="btnInsert"
+                 Content="Insert"
+                 Click="btnInsert_Click" />
+         <Button Name="btnUpdate"
+                 Content="Update"
+                 Click="btnUpdate_Click" />
+         <Button Name="btnDelete"
+                 Content="Delete"
+                 Click="btnDelete_Click" />
+         <Button Name="btnClear"
+                 Content="Clear"
+                 Click="btnClear_Click" />
+      </StackPanel>
+   </Grid>
+</Window>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Menus>
+  <Menu>
+    <MenuID>10</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Home</MenuText>
+    <Action>../Main/NextPage.aspx</Action>
+    <ParentMenuID></ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>20</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>20</DisplayOrder>
+    <MenuText>Maintenance</MenuText>
+    <Action>../Main/NextPage.aspx</Action>
+    <ParentMenuID></ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>30</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>30</DisplayOrder>
+    <MenuText>Lookup</MenuText>
+    <Action>../Main/NextPage.aspx</Action>
+    <ParentMenuID></ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>40</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>40</DisplayOrder>
+    <MenuText>My Profile</MenuText>
+    <Action>../Main/NextPage.aspx</Action>
+    <ParentMenuID></ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>50</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>50</DisplayOrder>
+    <MenuText>Sign Out</MenuText>
+    <Action>../Unsecured/Signout.aspx</Action>
+    <ParentMenuID></ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>60</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Sign Outx</MenuText>
+    <Action>../Unsecured/Signout.aspx</Action>
+    <ParentMenuID>10</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>70</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Menu Items</MenuText>
+    <Action>../Maint/winMenuMaint.aspx</Action>
+    <ParentMenuID>20</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>80</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Roles</MenuText>
+    <Action>../Maint/winRolesMaint.aspx</Action>
+    <ParentMenuID>20</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>90</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Users</MenuText>
+    <Action>../Maint/winUserMaint.aspx</Action>
+    <ParentMenuID>20</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>100</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Exceptions</MenuText>
+    <Action></Action>
+    <ParentMenuID>30</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>110</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>User Tracking</MenuText>
+    <Action></Action>
+    <ParentMenuID>30</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>120</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>User Logins</MenuText>
+    <Action></Action>
+    <ParentMenuID>30</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>130</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Change Password</MenuText>
+    <Action></Action>
+    <ParentMenuID>40</ParentMenuID>
+  </Menu>
+  <Menu>
+    <MenuID>140</MenuID>
+    <Enabled>true</Enabled>
+    <DisplayOrder>10</DisplayOrder>
+    <MenuText>Profile</MenuText>
+    <Action></Action>
+    <ParentMenuID>40</ParentMenuID>
+  </Menu>
+</Menus>
